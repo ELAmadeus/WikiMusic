@@ -1,0 +1,99 @@
+
+
+.divBody {
+  background-color: #000;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+footer {
+  padding: 1rem;
+}
+
+
+.tituloPagina {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  border-bottom-style: solid;
+  border-color: gray;
+  border-bottom-width: thin;
+  padding-bottom: 0.1em;
+  margin-bottom: 0.5em;
+  justify-content: center;
+}
+
+
+label:not([class^="custom-control"]) {
+  border-radius: 0.625em 0.2em 0rem 0.625em;
+  margin-right: -0.9em; 
+  padding-left: 0.5em;
+  display: block;
+  height: 90%;
+}
+
+@media only screen and (max-width: 575px) {
+  label:not([class^="custom-control"]) {
+    margin-right: 0em;
+    margin-top: 0.3rem; 
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .inputMedio {
+    width: 12em;
+  }
+  .inputChico {
+    width: 7em;
+  }
+
+}
+.pyBadge {
+  background-color: #6c757d;
+  color: white;
+  font-size: 1.1em;
+  display: inline-block;
+  padding: 0.35em 0.4em;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.25rem;
+}
+
+
+.validacion {
+  color: red;
+  font-size: 0.8em;
+  font-style: italic;
+  padding-left: 1em;
+  padding-bottom: 0.5em;
+}
+
+
+.mensajesAlert {
+  margin: 0rem 0.5rem 0rem 0.5rem;
+}
+
+.paginador {
+  background-color: #e9ecef;
+  padding: 0.5rem 1rem 0rem 1rem;
+}
+
+input {
+  margin-bottom: 0.2em
+}
+::placeholder {
+  text-transform: none;
+}
+
+.redes {
+  background-color: blue;
+  color: white;
+  padding: 0.4em;
+  margin: 0.3em;
+  border-radius: 1em;
+}
+

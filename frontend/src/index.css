@@ -1,0 +1,371 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #000;
+  z-index: 1000;
+}
+
+.container {
+  position: relative;
+  
+  border: 2px solid #6f11c786;
+  height: 650px;
+  overflow: auto;
+}
+
+
+
+/* ESTILOS PAGINA INICIO */
+.inicio-container {
+  background: black;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 0 20px; 
+  height: 100vh; 
+  
+}
+
+.inicio-container-title, .inicio-container-desc {
+  font-size: 72px;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.inicio-container-title {
+  font-weight: 800;
+}
+
+.inicio-container-desc {
+  font-weight: 400;
+}
+
+.inicio-container .left-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+
+.inicio-container .right-content {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+}
+
+.inicio-container img {
+  max-width: 65%; 
+  height: auto; 
+}
+
+.button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: inline-flex;
+  font-family: "Exo 2", sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+.boton-gimnasios {
+  margin: auto !important;
+}
+
+
+
+/* ESTILOS NAV */
+
+header {
+  background-color: #000;
+  z-index: 1000;
+}
+
+.container-fluid {
+  margin-bottom: auto;
+  font-family: "Exo 2", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+}
+
+.bg-nav {
+  background-color: #000 !important;
+  color: #fff
+}
+
+nav {
+  max-width: 100%;
+  background-color: #000;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li a {
+  padding: 18px;
+  text-transform: uppercase;
+  color: rgba(0, 35, 122, 0.5);
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+}
+
+nav ul li a:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 35, 122, 0.7);
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #484848;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1), inset 0 0 1px rgba(255, 255, 255, 0.6);
+  z-index: 1000;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li {
+  display: block;
+}
+
+nav ul li ul li a {
+  padding: 10px 18px;
+  font-size: 16px;
+}
+
+nav ul li ul li a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(0, 35, 122, 0.7);
+}
+
+/* ESTILOS TABLAS */
+.intro {
+  height: 80vh;
+}
+
+.tabla {
+  min-height: 80vh;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+table td,
+table th {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+thead th,
+tbody th {
+  color: #fff;
+}
+
+tbody td {
+  font-weight: 500;
+  color: rgba(255, 255, 255, .65);
+}
+
+/* ESTILOS VENTANAS DE ALERTA */
+
+@keyframes progressAnimation {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.demo {
+  background: linear-gradient(to right, #7e7683, #cccccc, #7e7683);
+  animation: progressAnimation 1.5s ease-in-out infinite;
+}
+
+.progress {
+  background: #262626;
+  border-top: 1px solid #000;
+  box-shadow: 0 5px 4px -6px #aaa;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  overflow: visible;
+}
+
+/* Estilo personalizado para el header del modal */
+.modal-header {
+  background-color: #000;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilo personalizado para el título del modal */
+.modal-title {
+  text-align: center;
+  flex: 1;
+}
+
+/* Estilo personalizado para el cuerpo del modal */
+.modal-body {
+  background-color: #000;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  color: #fff;
+  text-align: center;
+}
+
+/* Estilo personalizado para el footer del modal */
+.modal-footer {
+  background-color: #000 !important;
+  border: 1px solid #fff !important;
+  justify-content: center !important;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold;
+}
+
+/* Estilo para los botones en el footer del modal */
+.btn-modal-footer {
+  background-color: #000 !important;
+  color: #fff !important;
+  margin: 20px;
+  font-size: 14px;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  text-decoration: none;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 2px solid #fff;
+  justify-content: center;
+}
+
+.btn-modal-footer:hover {
+  background-color: #fff !important;
+  color: #000 !important;
+  border: 2px solid #000;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .inicio-container-title, .inicio-container-desc {
+    font-size: 48px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+/* ESTILOS FOOTER */
+
+.footer-container {
+  background: #000;
+  color: #333;
+  font-size: large;
+  font-weight: 400;
+  margin-top: auto;
+  height: 12.5vh;
+}
+
+.navbar-nav2 {
+  background-color: #553cf88e;  
+  color: rgb(255, 250, 250);              
+  padding: 9px 20px;         
+  border-radius: 25px;        
+  text-align: center;         
+  display: flex;              
+  justify-content: space-between; 
+  gap: 30px;                  
+  width: 250px;               
+  box-sizing: border-box;     
+  transition: background-color 0.3s ease; 
+}
+
+.navbar-nav2:hover {
+  background-color: #9340ffb7;  
+  border-radius: 5px;        
+}
+
+.navbar-nav2 li:nth-child(2) {
+ 
+  color: #f8fafa;               
+}
+
+.navbar-nav2 li:nth-child(2):hover {
+  color: #4edaec; 
+}
